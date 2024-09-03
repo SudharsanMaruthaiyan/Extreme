@@ -2,7 +2,12 @@ export const accordionData = [
     {
         type:"week1",
         title:"Week 1",
-        options: ['Introduction', 'Features', 'Usage','Interaction','Preparation'],
+        // options: ['Introduction', 'Features', 'Usage','Interaction','Preparation'],
+        option1:"Introduction",
+        option2:"Features",
+        option3:"Usage",
+        option4:"Interaction",
+        option5:"Preparation",
         duration:"30 minutes",
         quiz:"Week 1 Quiz",
         quizDuration:"40 minutes",
@@ -53,6 +58,7 @@ export const accordionData = [
         quizDuration:"30 minutes",
         quizQuesion:"6 questions"
     },
+    
     
     
 ]

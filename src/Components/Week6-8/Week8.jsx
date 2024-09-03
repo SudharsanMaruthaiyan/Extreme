@@ -5,7 +5,7 @@ const Week8 = ({title ,quizDuration,quizQuesion,quiz, options, duration , open, 
   return (
     <>
       <div className="my-0 bg-[#FFFFFF] shadow-lg accodion "> 
-            <button onClick={toggle} className={`flex border py-5  border-b-green-400 focus:outline-none w-full justify-between items-center px-4 ${open? ' transition ' :''}`}>
+            <button onClick={toggle} className={`flex border py-5 sticky top-0 bg-white border-b-green-400 focus:outline-none w-full justify-between items-center px-4 ${open? ' transition ' :''}`}>
                 <span className={`py-5 font-[poppins] font-bold text-xl text-start ${open ? ' ' : ''}`}>{title}</span> 
                 <div className={`${open ? ' ' : ''}`}>
                     {

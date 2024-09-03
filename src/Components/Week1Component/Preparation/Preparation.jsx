@@ -1,14 +1,16 @@
 import { data } from "autoprefixer"
 import { Search } from "lucide-react"
 import { useState } from "react"
-import { accordionData } from "../../assets/Api/accordionData"
-import Week1 from "../Week1/Week1"
-import Week2 from "../Week2/Week2"
-import Week3 from "../Week2-3/Week3"
-import Week6 from "../Week3-6/Week6"
-import Week8 from "../Week6-8/Week8"
-import Week10 from "../Week8-10/Week10"
-const Lesson = () => {
+import { accordionData } from "../../../assets/Api/accordionData"
+import Week1 from "../../Week1/Week1"
+import Week2 from "../../Week2/Week2"
+import Week3 from "../../Week2-3/Week3"
+import Week6 from "../../Week3-6/Week6"
+import Week8 from "../../Week6-8/Week8"
+import Week10 from "../../Week8-10/Week10"
+import Display from "../../Display/Display"
+
+const Preparation = () => {
     const [open, setOpen] = useState(false)
     const toggle = (index) =>{
         if(open === index){
@@ -16,14 +18,13 @@ const Lesson = () => {
         }
         setOpen(index)
     }
-   
   return (
     <>
         <div className=' max-w-[100%]'>
             <div className=''> 
-                <div className=' grid grid-cols-10'>
-                    <div className=' col-span-3'>
-                        <div className=' flex justify-between items-center w-full p-5 '>
+                <div className=' grid md:grid-cols-10'>
+                    <div className=' md:col-span-3 col-span-6'>
+                        <div className=' flex justify-between items-center w-full p-5 bg-[#F9FAFC]'>
                             <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
                             <Search className=' w-4'/>
                         </div>
@@ -52,8 +53,16 @@ const Lesson = () => {
                             </div>   
                         </div>
                     </div>
-                    <div className=' col-span-7 overflow-hidden'>
-                        
+                    <div className=' col-span-4 md:col-span-7'>
+                        <div className=" overflow-hidden">
+                            <div className=" py-[33.5px] bg-[#F9FAFC] border-b-2 ">
+
+                            </div>
+                            <div className=" md:p-10 md:px-32 p-5">
+                                <h1 className=" font-[poppins] font-bold text-[42px]"> Prepartion </h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ducimus autem repellendus ratione amet reprehenderit voluptas atque omnis, dicta ullam molestias expedita corporis tenetur eveniet quibusdam pariatur, hic laudantium aperiam!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,4 +71,4 @@ const Lesson = () => {
   )
 }
 
-export default Lesson
+export default Preparation
