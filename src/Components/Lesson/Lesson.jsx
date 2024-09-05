@@ -8,14 +8,16 @@ import Week3 from "../Week2-3/Week3"
 import Week6 from "../Week3-6/Week6"
 import Week8 from "../Week6-8/Week8"
 import Week10 from "../Week8-10/Week10"
+import Display from "../Display/Display"
 const Lesson = () => {
-    const [open, setOpen] = useState(false)
-    const toggle = (index) =>{
-        if(open === index){
-            return setOpen(null)
-        }
-        setOpen(index)
-    }
+    // const [open, setOpen] = useState(false)
+    // const toggle = (index) =>{
+    //     if(open === index){
+    //         return setOpen(!index)
+    //     }
+    //     setOpen(index)
+    // }
+    // open={index===open}
    
   return (
     <>
@@ -24,36 +26,41 @@ const Lesson = () => {
                 <div className=' grid grid-cols-10'>
                     <div className=' md:col-span-3 col-span-10'>
                         <div className=' flex justify-between items-center w-full p-5 '>
-                            <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
-                            <Search className=' w-4'/>
+                            {/* <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
+                            <Search className=' w-4'/> */}
+                            <h1 className=" text-2xl font-bold font-[poppins]">Syllabus</h1>
                         </div>
                         <div>
                             <div className="overflow-y-auto h-[700px]">
                                 {accordionData.map((data, index) => {
                                     if (data.type === 'week1') {
-                                    return <Week1 key={index} open={index===open} title={data.title} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} option5={data.option5} toggle={()=>toggle(index)}/>;
+                                    return <Week1 key={index}  title={data.title} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} option5={data.option5} toggle={()=>toggle(index)}/>;
                                     }
                                     else if (data.type === 'week2') {
-                                    return <Week2 key={index} open={index===open} title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} toggle={()=>toggle(index)} />
+                                    return <Week2 key={index}  title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} option5={data.option5} option6={data.option6} toggle={()=>toggle(index)} />
                                     }
                                     else if (data.type === 'week2-3') {
-                                    return <Week3 key={index} open={index===open} title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} toggle={()=>toggle(index)} />
+                                    return <Week3 key={index}  title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion}
+                                    option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} option5={data.option5} toggle={()=>toggle(index)} />
                                     }
                                     else if (data.type === 'week3-6') {
-                                    return <Week6 key={index} open={index===open} title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} toggle={()=>toggle(index)} />
+                                    return <Week6 key={index}  title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion}
+                                    option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} option5={data.option5} toggle={()=>toggle(index)} />
                                     }
                                     else if (data.type === 'week6-8') {
-                                    return <Week8 key={index} open={index===open} title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} toggle={()=>toggle(index)} />
+                                    return <Week8 key={index}  title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion}
+                                    option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} toggle={()=>toggle(index)} />
                                     }
                                     else if (data.type === 'week8-10') {
-                                    return <Week10 key={index} open={index===open} title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion} toggle={()=>toggle(index)} />
+                                    return <Week10 key={index}  title={data.title} options={data.options} duration={data.duration} quiz={data.quiz} quizDuration={data.quizDuration} quizQuesion={data.quizQuesion}
+                                    option1={data.option1} option2={data.option2} option3={data.option3} option4={data.option4} toggle={()=>toggle(index)} />
                                     }
                                 })}    
                             </div>   
                         </div>
                     </div>
                     <div className=' md:col-span-7 col-span-4 overflow-hidden'>
-                        
+                        <Display/>
                     </div>
                 </div>
             </div>
