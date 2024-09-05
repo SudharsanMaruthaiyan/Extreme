@@ -5,8 +5,7 @@ const Display = () => {
   return (
     <>
         <div className=" overflow-hidden">
-            <div className=" py-[35px] bg-[#F9FAFC] border-b-2 ">
-            </div>
+            
             {
               EnrolementCardApi.map((e,index)=>(
                 <>

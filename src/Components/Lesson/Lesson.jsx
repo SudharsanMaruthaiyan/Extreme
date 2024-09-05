@@ -15,7 +15,7 @@ const Lesson = () => {
         <div className=' max-w-[100%]'>
             <div className=''> 
                 <div className=' grid grid-cols-10'>
-                    <div className=' md:col-span-3 col-span-10'>
+                    <div className=' md:col-span-3 col-span-10 order-2 md:order-1'>
                         <div className=' flex justify-between items-center w-full p-5 '>
                             {/* <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
                             <Search className=' w-4'/> */}
@@ -50,7 +50,9 @@ const Lesson = () => {
                             </div>   
                         </div>
                     </div>
-                    <div className=' md:col-span-7 col-span-4 overflow-hidden'>
+                    <div className=' md:col-span-7 col-span-10 order-1 md:order-2'>
+                        <div className=" py-[35px] bg-[#F9FAFC] border-b-2 ">
+                        </div>
                         <Display/>
                     </div>
                 </div>

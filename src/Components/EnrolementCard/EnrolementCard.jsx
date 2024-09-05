@@ -5,7 +5,7 @@ const EnrolementCard = (props) => {
   return (
     <>
       <div>
-        <div className=" bg-[#D9D9D9] p-5 rounded-2xl">
+        <div className=" bg-[#D9D9D9] p-5 rounded-2xl ">
           <div className=" bg-[#151A30] text-white p-8 rounded-2xl py-20">
             <ul className=" flex items-center gap-1 pb-8">
               <li className=" font-[poppins] "><a href="">{props.store}</a></li>
