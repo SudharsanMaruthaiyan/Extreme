@@ -8,6 +8,7 @@ import Week3 from "../../Week2-3/Week3"
 import Week6 from "../../Week3-6/Week6"
 import Week8 from "../../Week6-8/Week8"
 import Week10 from "../../Week8-10/Week10"
+import PreparationVideo from "../../Week1VideoComponents/PreparationVideo/PreparationVideo"
 
 const Preparation = () => {
   return (
@@ -15,7 +16,7 @@ const Preparation = () => {
         <div className=' max-w-[100%]'>
             <div className=''> 
                 <div className=' grid md:grid-cols-10'>
-                    <div className=' md:col-span-3 col-span-6'>
+                    <div className=' md:col-span-3 col-span-10 order-2 md:order-1'>
                         <div className=' flex justify-between items-center w-full p-5 bg-[#F9FAFC]'>
                             {/* <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
                             <Search className=' w-4'/> */}
@@ -50,15 +51,11 @@ const Preparation = () => {
                             </div>  
                         </div>
                     </div>
-                    <div className=' col-span-4 md:col-span-7'>
+                    <div className=' md:col-span-7 col-span-10 order-1 md:order-2'>
                         <div className=" overflow-hidden">
-                            <div className=" py-[33.5px] bg-[#F9FAFC] border-b-2 ">
-
+                            <div className=" py-[35px] bg-[#F9FAFC] border-b-2 ">
                             </div>
-                            <div className=" md:p-10 md:px-32 p-5">
-                                <h1 className=" font-[poppins] font-bold text-[42px]"> Prepartion </h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ducimus autem repellendus ratione amet reprehenderit voluptas atque omnis, dicta ullam molestias expedita corporis tenetur eveniet quibusdam pariatur, hic laudantium aperiam!</p>
-                            </div>
+                            <PreparationVideo/>
                         </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ const Week1quiz = () => {
         <div className=' max-w-[100%]'>
             <div className=''> 
                 <div className=' grid md:grid-cols-10'>
-                    <div className=' md:col-span-3 col-span-6'>
+                    <div className=' md:col-span-3 col-span-10 order-2 md:order-1'>
                         <div className=' flex justify-between items-center w-full p-5 bg-[#F9FAFC]'>
                             {/* <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
                             <Search className=' w-4'/> */}
@@ -50,10 +50,9 @@ const Week1quiz = () => {
                             </div>  
                         </div>
                     </div>
-                    <div className=' md:col-span-7 col-span-4'>
+                    <div className=' md:col-span-7 col-span-10 order-1 md:order-2'>
                         <div className=" overflow-hidden">
-                            <div className=" py-[33.5px] bg-[#F9FAFC] border-b-2 ">
-
+                            <div className=" py-[35px] bg-[#F9FAFC] border-b-2 ">
                             </div>
                             <div className=" md:p-10 md:px-32 p-5">
                                 <h1 className=" font-[poppins] font-bold text-[42px]"> Week 1 Quiz </h1>

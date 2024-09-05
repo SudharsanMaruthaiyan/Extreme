@@ -10,15 +10,6 @@ import Week8 from "../Week6-8/Week8"
 import Week10 from "../Week8-10/Week10"
 import Display from "../Display/Display"
 const Lesson = () => {
-    // const [open, setOpen] = useState(false)
-    // const toggle = (index) =>{
-    //     if(open === index){
-    //         return setOpen(!index)
-    //     }
-    //     setOpen(index)
-    // }
-    // open={index===open}
-   
   return (
     <>
         <div className=' max-w-[100%]'>

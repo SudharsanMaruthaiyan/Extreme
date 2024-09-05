@@ -10,7 +10,7 @@ const Week6 = ({title ,quizDuration,quizQuesion,quiz, duration  , option1, optio
     <>
         <div className="my-0 bg-[#FFFFFF] shadow-lg accodion "> 
             <button onClick={()=> setAccodion(!accodion)} className={`flex border py-5 sticky top-0 bg-white border-b-green-400 focus:outline-none w-full justify-between items-center px-4 ${open? ' transition ' :''}`}>
-                <span className={`py-5 font-[poppins] font-bold text-xl text-start ${open ? ' ' : ''}`}>{title}</span> 
+                <span className={`py-5 font-[poppins] font-bold text-start ${open ? ' ' : ''}`}>{title}</span> 
                 <div className={`${open ? ' ' : ''}`}>
                     {
                         accodion ?<ChevronUp className=' w-4'/>   :  <ChevronDown className=' w-4'/> 

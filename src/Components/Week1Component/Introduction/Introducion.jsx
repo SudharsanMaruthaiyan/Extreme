@@ -9,13 +9,14 @@ import Week6 from "../../Week3-6/Week6"
 import Week8 from "../../Week6-8/Week8"
 import Week10 from "../../Week8-10/Week10"
 import Display from "../../Display/Display"
+import IntroductionVideo from "../../Week1VideoComponents/IntroductionVideo/IntroductionVideo"
 const Introducion = () => {
   return (
     <>
         <div className=' max-w-[100%]'>
             <div className=''> 
                 <div className=' grid md:grid-cols-10'>
-                    <div className=' md:col-span-3 col-span-6'>
+                    <div className=' md:col-span-3 col-span-10 order-2 md:order-1'>
                         <div className=' flex justify-between items-center w-full p-5 bg-[#F9FAFC]'>
                             {/* <input type="text" name="search" id="search" placeholder='Search for course content' className=' outline-none border-none text-lg bg-transparent'/>
                             <Search className=' w-4'/> */}
@@ -50,8 +51,10 @@ const Introducion = () => {
                             </div>    
                         </div>
                     </div>
-                    <div className=' md:col-span-7 col-span-4'>
-                        <Display/>
+                    <div className=' md:col-span-7 col-span-10 order-1 md:order-2'>
+                        <div className=" py-[35px] bg-[#F9FAFC] border-b-2 ">
+                        </div>
+                        <IntroductionVideo/>
                     </div>
                 </div>
             </div>
