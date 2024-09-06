@@ -47,6 +47,14 @@ const FeatureVideo = () => {
                   <Clock className=" w-4"/>
                   <p>Expires in 5 months</p>
                 </div>
+                <div className=" flex items-center shadow-lg gap-2 my-3 py-3 px-2">
+                  <Clock className=" w-4"/>
+                  <p>Expires in 5 months</p>
+                </div>
+                <div className=" flex items-center shadow-lg gap-2 my-3 py-3 px-2">
+                  <Clock className=" w-4"/>
+                  <p>Expires in 5 months</p>
+                </div>
               </div>
             </TabPanel>
             <TabPanel value={2}>
