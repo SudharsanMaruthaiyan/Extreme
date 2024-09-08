@@ -1,28 +1,29 @@
+import { PanelResizeHandle, Panel, PanelGroup } from "react-resizable-panels"
+import UsageVideo from "./Week1VideoComponents/UsageVideo/UsageVideo"
 import { data } from "autoprefixer"
 import { ArrowRight, Search,X } from "lucide-react"
 import { useState } from "react"
-import { accordionData } from "../../assets/Api/accordionData"
-import Week1 from "../Week1/Week1"
-import Week2 from "../Week2/Week2"
-import Week3 from "../Week2-3/Week3"
-import Week6 from "../Week3-6/Week6"
-import Week8 from "../Week6-8/Week8"
-import Week10 from "../Week8-10/Week10"
-import Display from "../Display/Display"
-import LmsNav from "../LmsNav/LmsNav"
+import { accordionData } from "../assets/Api/accordionData"
+import Week1 from "./Week1/Week1"
+import Week3 from "./Week2-3/Week3"
+import Week6 from "./Week3-6/Week6"
+import Week8 from "./Week6-8/Week8"
+import Week10 from "./Week8-10/Week10"
+import Display from "./Display/Display"
+import LmsNav from "./LmsNav/LmsNav"
+import Week2 from "./Week2/Week2"
+import { resizeable } from "../assets/images/images"
 
-import { resizeable } from "../../assets/images/images"
-import { PanelResizeHandle, Panel, PanelGroup } from "react-resizable-panels"
 import { Clock, IndianRupee } from "lucide-react"
 import { Tab, TabPanel, Tabs, TabsList } from "@mui/base";
 
-const Lesson = () => {
-   const [open, setOpen] = useState(false)
+const Demo = () => {
+    const [open, setOpen] = useState(false)
    const [isHovered, setIsHovered] = useState(false);
   return (
     <>
-        <div className=' max-w-[100%]'>
-            <div className=''> 
+        <div>
+            <div>
                 <div>
                     <LmsNav/>
                 </div>
@@ -42,7 +43,7 @@ const Lesson = () => {
                 </div>
                 
                 {/* resizable pannels start*/}
-                <div className={` ${open?'hidden':'md:block hidden'}`}>
+                <div className={` ${open?'hidden':'block'}`}>
                     <PanelGroup autoSaveId="example" direction="horizontal" className={' '}>
                         <Panel defaultSize={30}>
                             <div className={`order-2 md:order-1 ${open?'fixed ml-[-600px] transition duration-300 ease-in-out' : ' ml-[0px] transition-all duration-300 ease-in-out md:col-span-3 col-span-10 '}`}>
@@ -150,8 +151,8 @@ const Lesson = () => {
                 </div>
                 {/* resizable pannels end*/}
 
-                <div className={`grid grid-cols-10 ${open?' block':'md:hidden block'}`}>
-                    <div className={`order-2 md:order-1 md:block hidden ${open?'fixed ml-[-600px] transition duration-300 ease-in-out' : ' ml-[0px] transition-all duration-300 ease-in-out md:col-span-3 col-span-10 '}`}>
+                <div className={`grid grid-cols-10 ${open?' block':'hidden'}`}>
+                    <div className={`order-2 md:order-1 ${open?'fixed ml-[-600px] transition duration-300 ease-in-out' : ' ml-[0px] transition-all duration-300 ease-in-out md:col-span-3 col-span-10 '}`}>
                         <div >
                             <div className={` flex justify-between items-center w-full px-5 py-3`}>
                                 <h1 className=" text-lg font-bold font-[poppins] flex justify-between w-full items-center">Syllabus </h1>
@@ -215,7 +216,7 @@ const Lesson = () => {
                                     disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
                                     } text-[18px]  font-semibold px-8 py-3   flex justify-center focus:outline-0`,
                                 }),
-                                }} className={` `}>
+                                }} className={` ${open?'block':'hidden'}`}>
                                 
                                 <button  className='font-[poppins] font-bold text-sm'>SYLLABUS</button>
                             </Tab>
@@ -238,7 +239,7 @@ const Lesson = () => {
                             </div>
                             </TabPanel>
                             <TabPanel value={2}>
-                                <div className={`${open?'block' : 'md:hidden block'}`}>
+                                <div className={`${open?'block' : 'hidden'}`}>
                                     {/* <h1 className=" text-lg font-bold font-[poppins] flex justify-between w-full items-center p-5">Syllabus </h1> */}
                                     <div className="overflow-y-auto h-[700px]" id="open">
                                         {accordionData.map((data, index) => {
@@ -277,4 +278,4 @@ const Lesson = () => {
   )
 }
 
-export default Lesson
+export default Demo

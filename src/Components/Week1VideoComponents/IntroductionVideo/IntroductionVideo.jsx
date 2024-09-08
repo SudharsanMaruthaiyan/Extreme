@@ -9,7 +9,7 @@ const IntroductionVideo = () => {
           <iframe height="415" width={100} src="https://www.youtube.com/embed/gsG7uj9-4Jo?si=U-yurd7aaAhe6-V4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen className="w-[100%] rounded-2xl"></iframe>
           </div>
         </div>
-        <Tabs defaultValue={1}>
+        {/* <Tabs defaultValue={1}>
             <TabsList className=" flex items-center">
               <Tab value={1} slotProps={{
                   root: ({ selected, disabled }) => ({
@@ -60,7 +60,7 @@ const IntroductionVideo = () => {
             <TabPanel value={2}>
                 <h1>disscussion</h1>
             </TabPanel>
-        </Tabs>
+        </Tabs> */}
       </div>
     </>
   )

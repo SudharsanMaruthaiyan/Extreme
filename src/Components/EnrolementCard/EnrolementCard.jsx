@@ -34,50 +34,6 @@ const EnrolementCard = (props) => {
           </div>
           
         </div>
-        <Tabs defaultValue={1}>
-            <TabsList className=" flex items-center">
-              <Tab value={1} slotProps={{
-                  root: ({ selected, disabled }) => ({
-                    className: `font-[LexendDeca]  border-b-4 ${
-                      selected
-                        ? 'text-[#1363df] border-b-4 border-[#1363df] '
-                        : 'text-[#39557e] border-b-o'
-                    } ${
-                      disabled ? 'cursor-not-allowed opacity-50 ' : 'cursor-pointer '
-                    } text-[18px]  font-semibold px-8 py-3 flex justify-center focus:outline-0 `,
-                  }),
-                }}>
-                
-                <button  className=' font-[poppins] font-bold text-sm'>ABOUT</button>
-              </Tab>
-              <Tab value={2} slotProps={{
-                  root: ({ selected, disabled }) => ({
-                    className: `font-[LexendDeca]  border-b-4 ${
-                      selected
-                        ? 'text-[#1363df] border-b-4 border-[#1363df] '
-                        : 'text-[#39557e]'
-                    } ${
-                      disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-                    } text-[18px]  font-semibold px-8 py-3   flex justify-center focus:outline-0`,
-                  }),
-                }}>
-                
-                <button  className='font-[poppins] font-bold text-sm'>DISCUSSIONS</button>
-              </Tab>
-            </TabsList>
-            <TabPanel value={1}>
-              <div className=" p-8">
-                <h1 className=" text-[26px] font-[poppins]">{props.flowchart}</h1>
-                <div className=" flex items-center shadow-lg gap-2 my-3 py-3 px-2">
-                  <Clock className=" w-4"/>
-                  <p>Expires in 5 months</p>
-                </div>
-              </div>
-            </TabPanel>
-            <TabPanel value={2}>
-                <h1>disscussion</h1>
-            </TabPanel>
-        </Tabs>
       </div>
     </>
   )

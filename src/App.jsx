@@ -10,10 +10,12 @@ import Usage from './Components/Week1Component/Usage/Usage';
 import Interaction from './Components/Week1Component/Interaction/Interaction';
 import Preparation from './Components/Week1Component/Preparation/Preparation';
 import Week1quiz from './Components/Week1Component/Week1quiz/Week1quiz';
+import Demo from './Components/demo';
 const Applayout = ()=>{
   return(
     <>
       <Lesson/>
+      {/* <Demo/> */}
     </>
   )
 }
