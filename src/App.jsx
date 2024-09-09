@@ -14,8 +14,7 @@ import Demo from './Components/demo';
 const Applayout = ()=>{
   return(
     <>
-      {/* <Lesson/> */}
-      <Demo/>
+      <Lesson/>
     </>
   )
 }
