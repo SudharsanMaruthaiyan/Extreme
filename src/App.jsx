@@ -15,8 +15,7 @@ const Applayout = ()=>{
   return(
     <>
       {/* <Lesson/> */}
-      <Lesson/>
-      {/* <Demo/> */}
+      <Demo/>
     </>
   )
 }
